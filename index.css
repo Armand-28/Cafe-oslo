@@ -3,8 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face{
-font-family: url(imagenes/OpenSans-Bold.ttf);
+--open sans{
+    font-family: 'Open Sans', sans-serif;
+}
+--semi bold{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    font-family: 'Open Sans', sans-serif;
+}
+:root{
+    font-family: 'Open Sans', sans-serif;
 }
 aside{
     background-image: url(imagenes/Fondo1.jpg);
@@ -18,7 +27,7 @@ aside{
 aside .logo{
     position: absolute;
     width: 100px;
-    margin: 20px;
+    margin: 22px;
 }
 aside nav{
     position: absolute;
@@ -26,12 +35,43 @@ aside nav{
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin-left: 700px;
-    margin-top: 50px;
+    margin-left: 890px;
+    margin-top: 45px;
 }
 aside nav a{
     text-decoration: none;
     padding: 20px;
     color: #f5f0ed;
-    font-family: arial ;
+    font-family: var(--open) ;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin: auto;
+}
+aside .titulo{
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: 600px;
+}
+aside .titulo h1{
+    display: flex;
+    color: #f5f0ed;
+    font-size: 40px;
+    font-family: var(--open);
+    border-bottom: 2px solid #f5f0ed;
+    width: 350px;
+    justify-content: center;
+    text-transform: capitalize;
+    border-bottom-width: 2px;
+    width: 90px;
+}
+aside .titulo p{
+    position: relative;
+    font-family: var(--semi);
+    font-size: 16px;
+    padding-top: 20px;
+    color: #f5f0ed;
 }
