@@ -3,6 +3,7 @@
     padding: 0;
     vertical-align: baseline;
     margin: auto    ;
+    box-sizing: border-box;
 }
 --open sans{
     font-family: 'Open Sans', sans-serif;
@@ -289,7 +290,7 @@ section:nth-child(5){
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 320px;
 }
 
 section:nth-child(5) h1{
@@ -311,6 +312,8 @@ section:nth-child(5) .texto5{
     position: absolute;
     text-align: center;
     color :black;
+    top: 195px;
+    
 }
 section:nth-child(6){
     position: relative;
@@ -318,7 +321,7 @@ section:nth-child(6){
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 320px;
 }
 section:nth-child(6) h1{
     position: relative;
@@ -341,6 +344,7 @@ section:nth-child(6) .texto6{
     position: absolute;
     color: black;
     text-align: center;
+    top: 210px;
 }
 section:nth-child(7){
     position: relative;
@@ -385,6 +389,21 @@ font-family: var(--open);
 text-transform: uppercase;
 color: #d03b40;
 }
+section:nth-child(8) .texto8 {
+    position: absolute;
+    top: 120px;
+    color: #d03b40;
+    text-align: center;
+}
+section:nth-child(8) #enlace a{
+    position: absolute;
+    top: 185px;
+    right: 70px ;
+    text-decoration: none;
+    color: #d03b40;
+    font-family: var(--open);
+    font-weight: bold;
+}
 section:nth-child(9){
     position: relative;
     background-color: #d03b40;
@@ -396,7 +415,23 @@ section:nth-child(9) .cuadro6 h1{
     top: 30px;
     text-align: center;
     font-family: var(--open);
-    text-transform: uppercase;  
+    text-transform: uppercase; 
+    color: #ded6c0; 
+}
+section:nth-child(9) .texto8{
+position: absolute;
+top: 120px;
+color: #ded6c0;
+text-align: center;
+right: 90px;
+}
+section:nth-child(9) #enlace a{
+    position: absolute;
+    top: 165px;
+    right: 100px ;
+    text-decoration: none;
+    color: #ded6c0;
+    font-weight: bolder;
 }
 
 
