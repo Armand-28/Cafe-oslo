@@ -3,12 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximun-scale=1.0,minimun-scale=1.0">
     <title>Cafe-oslo</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <aside>
+
+    <aside class="mobil">
+        <p class="logo"><img src="imagenes/Logo.png" alt=""></p>
+        <div for="menu-ico" class="menu">
+            <label for="menu-ico"><i class="fa-solid fa-bars"></i></label>
+        </div>
+        <input type="checkbox"  id="menu-ico">
+        <div class="vertical">
+            <nav class="vertical-menu">
+                <li> <a href="#">El espacio</li>
+                <li> <a href="#">productos</li>
+                <li> <a href="#">ofertas</li>
+                <li> <a href="#">reservasa</li>
+                <li> <a href="#">Contactos</li>
+            </nav>
+            <label for="menu-ico"><i class="fa-sharp fa-solid fa-xmark"></i></label>
+        </div>
+        <p>
+            <h1>Recien hecho,<br> todos los dias</h1>
+            <h2></h2>
+        </p>
+        <p>Chocolate cake chocolate cake pie <br> candy canes chocolate cajke bondon. <br> I love marzipan liquorice i love cake <br> chupa  chups.pie danish macaroon ice cream ice cream.Bonbom sweet <br> bonbon jelly beans jelly-o <br> i love lollipop</p>
+    </aside>
+    <section>
+        <div class="cuadro1">
+            <h1>Ven al brunch de los domingos</h1>
+        </div >
+        <p class="texto1">Sesane snaps chochocate bar. I <br> love donut poweer sesame snaps. <br> Jelly-o o topping caramels. Sugar plim i <br> love gummi bears.</p>
+    </section>
+    <section>
+        <div class="cuadro2">
+            <h1>Celebra tus fiestas con nosotros</h1>
+        </div>
+        <p class="texto2">Sesane snaps chochocate bar. I <br> love donut poweer sesame snaps. <br> Jelly-o o topping caramels. Sugar plim i <br> love gummi bears.</p>
+    </section>
+    <section>
+        <div class="cuadro3">
+            <h1>Ven a desayunar</h1>
+        </div>
+        <span></span>
+        <p class="texto3">
+            bonbon topping i love sweet roll i love <br>candy icing chocolate jelly. Pie souffle sweet. apple pie bonbon caramels powder.
+        </p>
+        <button><a href="#">Descubre nuestros Productos</a></button>
+    </section>
+    <section>
+        <div class="iconos">
+            <img src="imagenes/Icono1.png" alt="">
+            <h1>Pan recien hecho</h1>
+        </div>
+        <p class="texto4">
+            cupcake danish i love halvah bonbon icing donut.Sweet caramels gonger- bread bear claw jujubes chocolate cake pudding sesame snaps bonbon.chocolate cake wafer pudding muffin wafer sweet roll i love chupa chups apple pie jujubes ice cream sugar plum topping.
+        </p>
+    </section>
+    <section>
+        <div class="iconos">
+            <img src="imagenes/Icono2.png" alt="">
+            <h1>Tartas para cada dia</h1>
+        </div>
+        <p class="texto5">
+            cupcake danish i love halvah bonbon icing donut.Sweet caramels gonger- bread bear claw jujubes chocolate cake pudding sesame snaps bonbon.chocolate cake.
+        </p>
+    </section>
+    <section>
+        <div class="iconos">
+            <img src="imagenes/Icono3.png" alt="">
+            <h1>prueba nuestros <br> dulces</h1>
+        </div>
+        <p class="texto6">
+            cupcake danish i love halvah bonbon icing donut.Sweet caramels gonger- bread bear claw jujubes chocolate cake pudding sesame snaps bonbon.chocolate cake.
+        </p>
+    </section>
+    <section>
+        <div class="iconos">
+            <img src="imagenes/Icono4.png" alt="">
+            <h1>Ingredientes ecologicos</h1>
+        </div>
+        <p class="texto7">
+            cupcake danish i love halvah bonbon icing donut.Sweet caramels gonger- bread bear claw jujubes chocolate cake.
+        </p>
+    </section>
+    <section>
+        <div class="cuadro5">
+            <h1>Contacta con nosotros</h1>
+        </div>
+        <p class="texto2">Sesane snaps chochocate bar. I <br> love donut poweer sesame snaps. <br> Jelly-o o topping caramels. Sugar plim i <br> love gummi bears.</p>
+    </section>
+    <section>
+        <div class="cuadro6">
+            <h1>¿Sabes donde estamos?</h1>
+        </div>
+        <p class="texto2">Sesane snaps chochocate bar. I <br> love donut poweer sesame snaps. <br> Jelly-o o topping caramels. Sugar plim i <br> love gummi bears.</p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/72ac7502a0.js" crossorigin="anonymous"></script>
+
+    <script>
+        const menuico = document.querySelector('.fa-solid fa-bars');
+        const menu = document.querySelector('.fa-sharp fa-solid fa-xmark');
+
+        menuico = addEventListener('clik', () =>{
+             menu.classList.toggle('show');
+        });
+    </script>
+
+
+    
+</body>
+</html>
+
+
+    <!-- <aside>
         <div class="logo"><img src="imagenes/Logo.png" alt=""></div>
         <nav>
             <li><a href="">El espacio</a></li>
@@ -21,7 +169,4 @@
             <h1>Recien hecho<br>todos los dias</h1>
             <p>Chocolate Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Aspernatur soluta distinctio ut voluptatibus nobis? Veritatis? <br> ipsum dolor sit amet consectetur adipisicing elit. Iusto, delectus<br>cumque sapiente maiores laboriosam quia!</p>
         </div>
-    </aside>
-    
-</body>
-</html>
+    </aside> -->

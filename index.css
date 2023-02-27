@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    vertical-align: baseline;
+    margin: auto    ;
 }
 --open sans{
     font-family: 'Open Sans', sans-serif;
@@ -15,7 +16,403 @@
 :root{
     font-family: 'Open Sans', sans-serif;
 }
-aside{
+.mobil{
+    background-image: url(imagenes/Fondo1.jpg);
+    position: relative;
+    background-position:center center ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.mobil .logo img{
+    position: absolute;
+    width: 159px;
+    height: 45px;
+    margin: 10px 10px ;
+}
+.mobil .menu label{
+    position: absolute;
+    margin-left: 230px;
+    max-width: 500px;
+    margin-top: 20px;
+    font-size: 45px;
+    color:#fff;
+    cursor: pointer;
+    float: left;
+    line-height: 70px;
+    background-color: #d03b40;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    display: none;
+    position: relative;
+    color: blue;
+    top: 0;
+    left: 280px;
+}
+
+.vertical{
+   position: fixed;
+   list-style: none;
+   background-color: rgba(255, 0, 0, 0.60);
+   width: 140px;
+   max-width: 250px;
+   height: 400px;
+   margin-top: 0;
+   right:0;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 500ms ease;
+   
+}
+#menu-ico:checked ~ .vertical{
+    opacity: 1;
+   visibility: visible;
+}
+.vertical .vertical-menu{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+.vertical .vertical-menu li{
+    position: relative;
+    padding-top: 25px;
+}
+.vertical .vertical-menu li a{
+    text-decoration: none;
+    font-family: var(--open);
+    color:#f5f0ed;
+    text-transform: capitalize;
+    border-right: 2px solid transparent;  
+    height: 10px;
+}
+.vertical label{
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+.mobil h1 {
+    position: absolute;
+    display: flex;
+    margin-top: 110px;
+    color: #f5f0ed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--open);
+    font-weight: bold;
+    right: 48px;
+    line-height: 30px;
+}
+ .mobil h2{
+    position: absolute;
+    border-bottom: 2px solid #f5f0ed;
+    width: 100px;
+    height: 20px;
+    top: 170px;
+    right: 100px;
+    
+ } 
+p:last-child{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 220px;
+    font-family: var(--open);
+    text-justify: auto;
+    text-align: center;
+    color: #f5f0ed;
+}
+section{
+    background-color: #d03b40;
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+section .cuadro1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40px;
+    font-family: var(--open);
+    color: #ded6c0;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section .texto1 {
+    position: absolute;
+    top: 140px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--open);
+}
+section:nth-child(2){
+    background-color: #ded6c0;
+    width: 100%;
+    height: 270px;
+    position: relative;
+}
+section .texto2{
+    position: absolute;
+    top: 140px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--open);
+    color: #d03b40;
+}
+section .cuadro2{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40px;
+    font-family: var(--open);
+    color: #d03b40;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section:nth-child(3){
+    background-image: url(imagenes/Fondo2.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+section .cuadro3{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 40px;
+    right: 30px;
+    font-family: var(--open);
+    color: #f5f0ed;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+span{
+    position: absolute;
+    border-bottom: 3px solid #f5f0ed;
+    width: 90px;
+    top: 80px;
+    right: 115px;
+
+}
+section .texto3{
+    position: absolute;
+    top: 110px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--open);
+    color: #f5f0ed;
+}
+section:nth-child(3) button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 210px;
+    width: 240px;
+    height: 40px;
+    border: 3px solid #f5f0ed;
+    background-color: transparent;
+    cursor: pointer;
+}
+section:nth-child(3) button a{
+    position: absolute;
+    color: #f5f0ed;
+    font-family: var(--open);
+    font-size: 16px;
+    text-decoration: none;
+    text-shadow: 20px 0px 10px  #f5f0ed;
+}
+section:nth-child(4){
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #f5f0ed;
+}
+section:nth-child(4) .iconos h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+    color: black;
+    text-transform: uppercase;
+}
+section:nth-child(4) img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    right: 100px;
+}
+section:nth-child(4) .texto4{
+    position: absolute;
+    color: black;
+    text-align: center;
+    
+}
+section:nth-child(5){
+    position: relative;
+    background-color: #f5f0ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+section:nth-child(5) h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+section:nth-child(5) img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    right: 100px;
+}
+section:nth-child(5) .texto5{
+    position: absolute;
+    text-align: center;
+    color :black;
+}
+section:nth-child(6){
+    position: relative;
+    background-color: #f5f0ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+section:nth-child(6) h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    left: 10px;
+    text-align: center;
+}
+section:nth-child(6) img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    right: 100px;
+}
+section:nth-child(6) .texto6{
+    position: absolute;
+    color: black;
+    text-align: center;
+}
+section:nth-child(7){
+    position: relative;
+    background-color: #f5f0ed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+section:nth-child(7) h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    left: 60px;
+}
+section:nth-child(7) .texto7{
+    position: absolute;
+    color: black;
+    text-align: center;
+}
+section:nth-child(7) img{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    right: 100px;
+}
+section:nth-child(8){
+position: relative;
+background-color: #ded6c0;
+justify-content: center;
+align-items: center;
+}
+section:nth-child(8) .cuadro5 h1{
+position: absolute;
+top: 30px;
+text-align: center;
+font-family: var(--open);
+text-transform: uppercase;
+color: #d03b40;
+}
+section:nth-child(9){
+    position: relative;
+    background-color: #d03b40;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-child(9) .cuadro6 h1{
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    font-family: var(--open);
+    text-transform: uppercase;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aside{
     background-image: url(imagenes/Fondo1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,4 +471,4 @@ aside .titulo p{
     font-size: 16px;
     padding-top: 20px;
     color: #f5f0ed;
-}
+} */
